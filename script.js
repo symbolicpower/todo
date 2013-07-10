@@ -1,7 +1,9 @@
 $(document).ready(function() {
+	$('ol').sortable();
+	
     $('#button').click(function() {
         var toAdd = $('input[name=checkListItem]').val();
-        $('.list').append('<div class="item">' + toAdd + '</div>');
+        $('.list').append('<li class="item">' + toAdd + '</li>');
     });
     
     $(document).on('click', '.item', function() {
